@@ -12,11 +12,12 @@
     top: 0;
     width: 100%;
     z-index: 999;
-    .menu_fix{
+    &.menu_fix{
             position: fixed;
             left: 0;
             top: 0;
             width: 100%;
+            background: rgba(0, 0, 0, 0.9);
             z-index: 999;
         }
     .menu_row{
