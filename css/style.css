@@ -1,0 +1,722 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------
+                Common CSS End
+------------------------------------------ */
+/* ------------------------------------------
+                Menu Part Start
+------------------------------------------ */
+#menu {
+  padding: 33px 0;
+  background: rgba(0, 0, 0, 0.44);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#menu .menu_fix {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#menu .menu_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#menu .menu_row .logo {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#menu .menu_row .logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#menu .menu_row .main_menu {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+#menu .menu_row .main_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#menu .menu_row .main_menu ul li a {
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-left: 44px;
+  text-transform: uppercase;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#menu .menu_row .main_menu ul li a:hover {
+  color: #28b8d8;
+}
+
+#menu .menu_row .menu_icon {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  position: relative;
+}
+
+#menu .menu_row .menu_icon::after {
+  position: absolute;
+  content: '';
+  left: 25px;
+  top: -5px;
+  width: 2px;
+  height: 30px;
+  background: #3c3a43;
+}
+
+#menu .menu_row .menu_icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#menu .menu_row .menu_icon ul li a {
+  color: #f5f5f5;
+  font-size: 14px;
+  margin-left: 28px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#menu .menu_row .menu_icon ul li a:hover {
+  color: #28b8d8;
+}
+
+/* ------------------------------------------
+                Menu Part End
+------------------------------------------ */
+/* ------------------------------------------
+                Banner Part Start
+------------------------------------------ */
+#banner {
+  padding: 250px 0 195px;
+  text-align: center;
+}
+
+#banner .banner_text h1 {
+  color: #f5f5f5;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+#banner .banner_text h2 {
+  color: #f5f5f5;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+}
+
+#banner .banner_text p {
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+}
+
+/* ------------------------------------------
+                Banner Part End
+------------------------------------------ */
+/* ------------------------------------------
+                Service Part Start
+------------------------------------------ */
+#service {
+  padding: 80px 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#service .service_head h2 {
+  color: #444444;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+}
+
+#service .service_head p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-top: 15px;
+}
+
+#service .service_main .serv_in_head h4 {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-top: 68px;
+}
+
+#service .service_main .serv_img_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+}
+
+#service .service_main .serv_img_row .serv_col {
+  width: 32%;
+  border: 1px solid #e3e3e3;
+  padding: 15px;
+  background: #ffffff;
+}
+
+#service .service_main .serv_img_row .serv_col .serv_img {
+  width: 100%;
+  max-width: 100%;
+}
+
+#service .service_main .serv_img_row .serv_col .serv_text h4 {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  padding-top: 25px;
+}
+
+#service .service_main .serv_img_row .serv_col .serv_text p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+  padding-top: 12px;
+}
+
+/* ------------------------------------------
+                Service Part End
+------------------------------------------ */
+/* ------------------------------------------
+                Instagram Part Start
+------------------------------------------ */
+#instagram {
+  padding-bottom: 80px;
+  background: #2c2c2c;
+  text-align: center;
+}
+
+#instagram .common_head h4 {
+  color: #d5d5d5;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-top: 60px;
+  position: relative;
+}
+
+#instagram .common_head h4::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  left: 36%;
+  top: 82%;
+  border-top: 2px solid #535353;
+  border-bottom: 2px solid #535353;
+  z-index: 999;
+}
+
+#instagram .common_head h4::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  right: 36%;
+  top: 82%;
+  border-top: 2px solid #535353;
+  border-bottom: 2px solid #535353;
+  z-index: 999;
+}
+
+#instagram .instagram_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 15px;
+  padding-top: 20px;
+}
+
+#instagram .instagram_img .instagram_col {
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
+}
+
+#instagram .instagram_img .instagram_col img {
+  width: 100%;
+  max-width: 100%;
+}
+
+#instagram .instagram_button a {
+  padding: 16px 20px;
+  border: 1px solid #797979;
+  margin-top: 40px;
+  color: #a6a6a6;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+#instagram .instagram_button a i {
+  padding-right: 8px;
+}
+
+/* ------------------------------------------
+                Instagram Part End
+------------------------------------------ */
+/* ------------------------------------------
+                Form Part Start
+------------------------------------------ */
+#from {
+  padding-bottom: 80px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+#from .common_head h4 {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-top: 60px;
+  position: relative;
+}
+
+#from .common_head h4::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  left: 34%;
+  top: 82%;
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  z-index: 999;
+}
+
+#from .common_head h4::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  right: 34%;
+  top: 82%;
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  z-index: 999;
+}
+
+#from .from_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+}
+
+#from .from_row .from_col {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+}
+
+#from .from_row .from_col .from_head h4 {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  padding-top: 20px;
+}
+
+#from .from_row .from_col .from_head p {
+  color: #999999;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-top: 10px;
+}
+
+#from .from_row .from_col .from_img {
+  padding-top: 20px;
+}
+
+#from .from_row .from_col .from_img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+#from .from_row .from_col .from_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 22px;
+}
+
+#from .from_row .from_col .from_text p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+
+#from .from_row .from_col .from_text h5 {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding-top: 20px;
+  border-bottom: 1px solid #28b8d8;
+}
+
+#from .from_row .from_col .from_text a {
+  color: #999999;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+#from .from_row .from_col .from_text a i {
+  padding: 3px;
+}
+
+/* ------------------------------------------
+                Form Part End
+------------------------------------------ */
+/* ------------------------------------------
+                About Part Start
+------------------------------------------ */
+#about {
+  padding-bottom: 80px;
+  background: #f9f9f9;
+}
+
+#about .about_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#about .about_row .about_col1 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+#about .about_row .about_col1 .heading h2 {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#about .about_row .about_col1 .heading h2::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  left: 28%;
+  top: 40%;
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+#about .about_row .about_full {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+}
+
+#about .about_row .about_full .about_img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+#about .about_row .about_full .about_text {
+  max-width: 345px;
+  margin-right: 20px;
+}
+
+#about .about_row .about_full .about_text h3 {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+  line-height: 28px;
+  padding-bottom: 20px;
+}
+
+#about .about_row .about_full .about_text p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+}
+
+#about .about_row .about_col2 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+#about .about_row .about_col2 .heading h2 {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#about .about_row .about_col2 .heading h2::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  left: 20%;
+  top: 40%;
+  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+#about .about_row .about_col2 .about_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+}
+
+#about .about_row .about_col2 .about_icon .icon {
+  -ms-flex-preferred-size: 8%;
+      flex-basis: 8%;
+}
+
+#about .about_row .about_col2 .about_icon .icon i {
+  font-size: 40px;
+  color: #28b8d8;
+}
+
+#about .about_row .about_col2 .about_icon .text {
+  -ms-flex-preferred-size: 92%;
+      flex-basis: 92%;
+  padding-left: 20px;
+}
+
+#about .about_row .about_col2 .about_icon .text h3 {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  padding-bottom: 15px;
+}
+
+#about .about_row .about_col2 .about_icon .text p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+  max-width: 457px;
+}
+
+/* ------------------------------------------
+                About Part End
+------------------------------------------ */
+/* ------------------------------------------
+                Banner Part Start
+------------------------------------------ */
+#footer .footer_top {
+  padding-bottom: 80px;
+  background: #373737;
+}
+
+#footer .footer_top .footer_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .footer_top .footer_row .footer_col {
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
+}
+
+#footer .footer_top .footer_row .footer_col .foot_head {
+  padding-top: 50px;
+}
+
+#footer .footer_top .footer_row .footer_col .foot_head h3 {
+  color: #f0f0f0;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+#footer .footer_top .footer_row .footer_col .foot_text {
+  color: #cacaca;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+#footer .footer_top .footer_row .footer_col .foot_text p {
+  line-height: 24px;
+  max-width: 258px;
+  padding-top: 20px;
+}
+
+#footer .footer_top .footer_row .footer_col .foot_text ul {
+  padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .footer_top .footer_row .footer_col .foot_text ul li {
+  line-height: 24px;
+}
+
+#footer .footer_top .footer_row .footer_col .foot_text ul li span {
+  margin-left: 20px;
+}
+
+#footer .footer_top .footer_row .footer_col .foot_text ul li span p {
+  margin-left: 35px;
+}
+
+#footer .footer_bottom {
+  padding: 28px 0;
+  background: #333333;
+}
+
+#footer .footer_bottom .bottom_text p {
+  color: #cacaca;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ------------------------------------------
+                Banner Part End
+------------------------------------------ */
+/*# sourceMappingURL=style.css.map */

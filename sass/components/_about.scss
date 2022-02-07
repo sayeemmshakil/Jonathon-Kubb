@@ -1,0 +1,111 @@
+@import '../variables/variables';
+@import '../mixin/mixin';
+
+/* ------------------------------------------
+                About Part Start
+------------------------------------------ */
+#about{
+    padding-bottom: 80px;
+    background: #f9f9f9;
+    .about_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       .about_col1{
+           flex-basis: 50%;
+            .heading{
+                h2{
+                    @include ts(#444444, 18px, 700, $ff1);
+                    text-transform: uppercase;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        width: 100px;
+                        height: 5px;
+                        left: 28%;
+                        top: 40%;
+                        border-top: 2px solid #d9d9d9;
+                        border-bottom: 2px solid #d9d9d9;
+                    }
+                }
+            }
+       }
+       .about_full{
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+           padding-top: 30px;
+           .about_img{
+               img{
+                   width: 100%;
+                   max-width: 100%;
+               }
+           }
+           .about_text{
+               max-width: 345px;
+               margin-right: 20px;
+               h3{
+                @include ts(#666666, 18px, 300, $ff2);
+                line-height: 28px;
+                padding-bottom: 20px;
+               }
+               p{
+                @include ts(#666666, 14px, 400, $ff3);
+                line-height: 24px;
+               }
+           }
+       }
+       .about_col2{
+           flex-basis: 50%;
+            .heading{
+                h2{
+                    @include ts(#444444, 18px, 700, $ff1);
+                    text-transform: uppercase;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        width: 100px;
+                        height: 5px;
+                        left: 20%;
+                        top: 40%;
+                        border-top: 2px solid #d9d9d9;
+                        border-bottom: 2px solid #d9d9d9;
+                    }
+                }
+            }
+            .about_icon{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding-top: 30px;
+                .icon{
+                    flex-basis: 8%;
+                    i{
+                        font-size: 40px;
+                        color: #28b8d8;
+                    }
+                }
+                .text{
+                    flex-basis: 92%;
+                    padding-left: 20px;
+                    h3{
+                        @include ts(#444444, 17px, 700, $ff2);
+                        padding-bottom: 15px;
+                    }
+                    p{
+                        @include ts(#666666, 14px, 400, $ff3);
+                        line-height: 22px;
+                        max-width: 457px;
+                    }
+                }
+            }
+       }
+    }
+}
+/* ------------------------------------------
+                About Part End
+------------------------------------------ */

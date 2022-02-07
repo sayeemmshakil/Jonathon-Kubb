@@ -1,0 +1,60 @@
+@import '../variables/variables';
+@import '../mixin/mixin';
+
+/* ------------------------------------------
+                Service Part Start
+------------------------------------------ */
+#service{
+    padding: 80px 0;
+    background: #f9f9f9;
+    text-align: center;
+    .service_head{
+        h2{
+            @include ts(#444444, 30px, 300, $ff2);
+        }
+        p{
+            @include ts(#666666, 14px, 400, $ff3);
+            padding-top: 15px;
+        }
+
+    }
+    .service_main{
+        .serv_in_head{
+            h4{
+                @include ts(#444444, 18px, 700, $ff1);
+                text-transform: uppercase;
+                padding-top: 68px;
+            }
+        }
+        .serv_img_row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-top: 30px;
+            .serv_col{
+                width: 32%;
+                border: 1px solid #e3e3e3;
+                padding: 15px;
+                background: #ffffff;
+                .serv_img{
+                    width: 100%;
+                    max-width: 100%;
+                }
+                .serv_text{
+                    h4{
+                        @include ts(#444444, 17px, 700, $ff2);
+                        padding-top: 25px;
+                    }
+                    p{
+                        @include ts(#666666, 14px, 400, $ff3);
+                        line-height: 22px;
+                        padding-top: 12px;  
+                    }
+                }
+            }
+        }
+    }
+}
+/* ------------------------------------------
+                Service Part End
+------------------------------------------ */

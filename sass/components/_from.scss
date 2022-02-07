@@ -1,0 +1,100 @@
+@import '../variables/variables';
+@import '../mixin/mixin';
+
+/* ------------------------------------------
+                Form Part Start
+------------------------------------------ */
+#from{
+    padding-bottom: 80px;
+    background: #f9f9f9;
+    text-align: center;
+    .common_head{
+        h4{
+            @include ts(#444444, 18px, 700, $ff1);
+            text-transform: uppercase;
+            padding-top: 60px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                display: block;
+                width: 100px;
+                height: 5px;
+                left: 34%;
+                top: 82%;
+                border-top: 2px solid #d9d9d9;
+                border-bottom: 2px solid #d9d9d9;
+                z-index: 999;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                display: block;
+                width: 100px;
+                height: 5px;
+                right: 34%;
+                top: 82%;
+                border-top: 2px solid #d9d9d9;
+                border-bottom: 2px solid #d9d9d9;
+                z-index: 999;
+            }
+        }
+    }
+    .from_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 30px;
+        .from_col{
+            flex-basis: 32%;
+            background: #ffffff;
+            border: 1px solid #e3e3e3;
+            .from_head{
+                h4{
+                    @include ts(#444444, 16px, 700, $ff2);
+                    padding-top: 20px
+                }
+                p{
+                    @include ts(#999999, 12px, 400, $ff3);
+                    padding-top: 10px;
+                }
+            }
+            .from_img{
+                padding-top: 20px;
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            .from_text{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 22px;
+                p{
+                    @include ts(#666666, 14px, 400, $ff3);
+                    text-align: left;
+                    
+                }
+                h5{
+                    @include ts(#999999, 11px, 400, $ff3);
+                    text-transform: uppercase;
+                    padding-top: 20px;
+                    border-bottom: 1px solid #28b8d8;
+                }
+                a{
+                    color: #999999;
+                    font-size: 11px;
+                    padding-top: 20px;
+                    i{
+                        padding: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+/* ------------------------------------------
+                Form Part End
+------------------------------------------ */

@@ -1,0 +1,68 @@
+@import '../variables/variables';
+@import '../mixin/mixin';
+
+/* ------------------------------------------
+                Banner Part Start
+------------------------------------------ */
+#footer{
+    .footer_top{
+        padding-bottom: 80px;
+        background: #373737;
+        .footer_row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .footer_col{
+                flex-basis: 24%;
+                .foot_head{
+                    padding-top: 50px;
+                    h3{
+                        @include ts(#f0f0f0, 16px, 700, $ff1);
+                        text-transform: uppercase;
+                    }
+                }
+                .foot_text{
+                    @include ts(#cacaca, 14px, 400, $ff3);
+                    p{
+                        line-height: 24px;
+                        max-width: 258px;
+                        padding-top: 20px;
+                    }
+                    ul{
+                        padding-top: 32px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        li{
+                            line-height: 24px;
+                            span{
+                                margin-left: 20px;
+                                p{
+                                    margin-left: 35px;
+                                }
+                            }
+                        }
+                    }
+                    // .food_part{
+                    //     span{
+                    //         @include ts(#929292, 12px, 400, $ff3);
+                    //     }
+                    // }
+                }
+            }
+        }
+    }
+    .footer_bottom{
+        padding: 28px 0;
+        background: #333333;
+        .bottom_text{
+            p{
+                @include ts(#cacaca, 14px, 400, $ff3);
+            }
+        }
+    }
+}
+
+/* ------------------------------------------
+                Banner Part End
+------------------------------------------ */

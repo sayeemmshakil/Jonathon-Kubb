@@ -1,0 +1,26 @@
+@import '../variables/variables';
+@import '../mixin/mixin';
+
+/* ------------------------------------------
+                Banner Part Start
+------------------------------------------ */
+#banner{
+    padding: 250px 0 195px;
+    text-align: center;
+    .banner_text{
+        h1{
+            @include ts($wht, 50px, 700, $ff1);
+            text-transform: uppercase;
+        }
+        h2{
+            @include ts($wht, 40px, 300, $ff2);
+            text-transform: uppercase;
+        }
+        p{
+            @include ts($wht, 14px, 300, $ff2);
+        }
+    }
+}
+/* ------------------------------------------
+                Banner Part End
+------------------------------------------ */

@@ -1,0 +1,72 @@
+@import '../variables/variables';
+@import '../mixin/mixin';
+
+/* ------------------------------------------
+                Instagram Part Start
+------------------------------------------ */
+#instagram{
+    padding-bottom: 80px;
+    background: #2c2c2c;
+    text-align: center;
+    .common_head{
+        h4{
+            @include ts(#d5d5d5, 18px, 700, $ff1);
+            text-transform: uppercase;
+            padding-top: 60px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                display: block;
+                width: 100px;
+                height: 5px;
+                left: 36%;
+                top: 82%;
+                border-top: 2px solid #535353;
+                border-bottom: 2px solid #535353;
+                z-index: 999;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                display: block;
+                width: 100px;
+                height: 5px;
+                right: 36%;
+                top: 82%;
+                border-top: 2px solid #535353;
+                border-bottom: 2px solid #535353;
+                z-index: 999;
+            }
+        }
+    }
+    .instagram_img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 15px;
+        padding-top: 20px;
+        .instagram_col{
+            flex-basis: 24%;
+            img{
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    .instagram_button{
+        a{
+            padding: 16px 20px;
+            border: 1px solid #797979;
+            margin-top: 40px;
+            @include ts(#a6a6a6, 14px, 400, $ff3);
+            text-transform: uppercase;
+            i{
+                padding-right: 8px;
+            }
+        }
+    }
+}
+/* ------------------------------------------
+                Instagram Part End
+------------------------------------------ */
